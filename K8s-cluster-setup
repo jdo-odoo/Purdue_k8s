@@ -95,7 +95,6 @@ $ sudo sed -i 's/SystemdCgroup \= false/SystemdCgroup \= true/g' /etc/containerd
 
 Restart containerd service so that above changes come into the affect.
 $ sudo systemctl restart containerd
-$ sudo systemctl enable containerd
 
 4) Add Kubernetes Package Repository
 Kubernetes packages are not available in the default package repositories of Ubuntu 24.04, so for its installation first add it’s repository. Run these steps on each instance.
